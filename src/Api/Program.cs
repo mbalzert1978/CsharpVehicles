@@ -1,10 +1,8 @@
-using Serilog;
+using FastEndpoints;
 
-WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder bld = WebApplication.CreateBuilder();
+bld.Services.AddFastEndpoints();
 
-builder.Services.AddOpenApi();
-builder.Host.UseSerilog();
-
-WebApplication app = builder.Build();
-
-app.UseHttpsRedirection().UseExceptionHandler("/error");
+WebApplication app = bld.Build();
+app.UseFastEndpoints();
+app.Run();
