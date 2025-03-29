@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "globals", "globals", "{2DBD3774-6144-1988-4283-06AC6AB2B806}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.config\dotnet-tools.json = .config\dotnet-tools.json
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AE7C4432-DCDF-41EB-9B7B-D2C5168636D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "src\Api\Api.csproj", "{070151A2-4181-48D8-AE4D-F25792672D1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{070151A2-4181-48D8-AE4D-F25792672D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070151A2-4181-48D8-AE4D-F25792672D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070151A2-4181-48D8-AE4D-F25792672D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070151A2-4181-48D8-AE4D-F25792672D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{070151A2-4181-48D8-AE4D-F25792672D1E} = {AE7C4432-DCDF-41EB-9B7B-D2C5168636D5}
+	EndGlobalSection
+EndGlobal
